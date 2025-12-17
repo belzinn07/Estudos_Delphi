@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/12/12 23:24:09.000.052,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/14 12:51:44.000.754,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/15 21:34:21.000.739,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/15 21:39:44.000.004,C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm=C:\DEV\Delphi\PrimeiroProjeto\Unit1.dfm</Transaction>
+    <Transaction>2025/12/15 21:39:44.000.004,C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas=C:\DEV\Delphi\PrimeiroProjeto\Unit1.pas</Transaction>
+    <Transaction>2025/12/15 21:39:54.000.580,C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj=C:\DEV\Delphi\PrimeiroProjeto\Project1.dproj</Transaction>
+    <Transaction>2025/12/15 21:48:46.000.866,=C:\DEV\Delphi\PrimeiroProjeto\Unit2.pas</Transaction>
+    <Transaction>2025/12/15 21:51:06.000.132,C:\DEV\Delphi\PrimeiroProjeto\Unit2.pas=C:\DEV\Delphi\PrimeiroProjeto\uClientes.pas</Transaction>
+    <Transaction>2025/12/15 21:51:06.000.132,C:\DEV\Delphi\PrimeiroProjeto\Unit2.dfm=C:\DEV\Delphi\PrimeiroProjeto\uClientes.dfm</Transaction>
+  </Transactions>
+</BorlandProject>
