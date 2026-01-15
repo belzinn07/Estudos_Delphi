@@ -1,0 +1,25 @@
+unit untProduto;
+
+interface
+
+type
+  TProduto: class;
+
+    private
+      FDescricao: String;
+      FPreco: Currency;
+
+    public
+      property Descricao: String  read FNome write Fnome;
+      property Preco: Currency read FPreco write FPreco;
+
+      function ValidarPreco : Boolean;
+
+implementation
+
+function TProduto.ValidarPreco : Boolean;
+begin
+  Result := ()
+end;
+
+end.

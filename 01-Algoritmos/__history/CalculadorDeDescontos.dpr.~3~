@@ -1,0 +1,38 @@
+program CalculadorDeDescontos;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+var
+nomeDoProduto: String;
+precoOriginal: Currency;
+valorPercentual: Double;
+valorDeDesconto: Currency;
+precoFinal: Currency;
+
+
+begin
+
+Writeln('Digite o nome do produto:');
+Readln(nomeDoProduto);
+Writeln('Digite o preço:');
+Readln(precoOriginal);
+Writeln('Digite o pencentual de desconto: ');
+Readln(valorPercentual);
+
+valorDeDesconto:= precoOriginal * valorPercentual/100;
+Writeln('O valor de desconto é ', valorDeDesconto);
+
+precoFinal:= precoOriginal - valorDeDesconto;
+Writeln('Preço final é ', precoFinal);
+
+
+
+
+
+
+end.

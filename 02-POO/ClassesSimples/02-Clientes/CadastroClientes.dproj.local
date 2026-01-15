@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/12/12 23:24:09.000.052,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/14 12:51:44.000.754,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 22:43:09.513,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 22:43:39.426,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2026/01/14 22:45:55.733,C:\DEV\Delphi\Estudos_Delphi\02-POO\ClassesSimples\02-Clientes\untCliente.pas=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2026/01/14 22:46:27.517,C:\DEV\Delphi\Estudos_Delphi\02-POO\ClassesSimples\02-Clientes\frmCliente.pas=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 22:46:27.517,C:\DEV\Delphi\Estudos_Delphi\02-POO\ClassesSimples\02-Clientes\frmCliente.dfm=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/01/14 22:46:42.253,C:\DEV\Delphi\Estudos_Delphi\02-POO\ClassesSimples\02-Clientes\ValidarCPF.dproj=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2026/01/14 22:58:17.793,C:\DEV\Delphi\Estudos_Delphi\02-POO\ClassesSimples\02-Clientes\CadastroClientes.dproj=C:\DEV\Delphi\Estudos_Delphi\02-POO\ClassesSimples\02-Clientes\ValidarCPF.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

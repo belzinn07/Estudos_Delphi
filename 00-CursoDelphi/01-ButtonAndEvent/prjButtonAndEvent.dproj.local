@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/12/12 23:24:09.000.052,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/14 12:51:44.000.754,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 14:10:57.148,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 14:29:38.809,C:\DEV\Delphi\Estudos_Delphi\00-CursoDelphi\06-ButtonAndEvent\untPrincipal.dfm=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/01/14 14:29:38.809,C:\DEV\Delphi\Estudos_Delphi\00-CursoDelphi\06-ButtonAndEvent\untPrincipal.pas=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 14:29:56.280,C:\DEV\Delphi\Estudos_Delphi\00-CursoDelphi\06-ButtonAndEvent\prjButtonAndEvent.dproj=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

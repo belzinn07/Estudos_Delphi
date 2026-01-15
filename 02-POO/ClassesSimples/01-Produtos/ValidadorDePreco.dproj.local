@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2025/12/12 23:24:09.000.052,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/12/14 12:51:44.000.754,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 21:59:05.128,=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 21:59:37.960,=C:\DEV\Delphi\Estudos_Delphi\02-POO\01-Produtos\untProduto.pas</Transaction>
+    <Transaction>2026/01/14 22:03:48.471,C:\DEV\Delphi\Estudos_Delphi\02-POO\01-Produtos\frmPrincipal.dfm=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2026/01/14 22:03:48.471,C:\DEV\Delphi\Estudos_Delphi\02-POO\01-Produtos\frmPrincipal.pas=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2026/01/14 22:04:26.302,C:\DEV\Delphi\Estudos_Delphi\02-POO\01-Produtos\ValidadorDePreco.dproj=C:\Users\netob\OneDrive\Documentos\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

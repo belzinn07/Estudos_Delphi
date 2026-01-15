@@ -1,0 +1,127 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Convers'#227'o de Strings'
+  ClientHeight = 441
+  ClientWidth = 624
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 624
+    Height = 73
+    Align = alTop
+    Caption = 'Sistema de Soma'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -32
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentFont = False
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 73
+    Width = 624
+    Height = 368
+    Align = alClient
+    TabOrder = 1
+    ExplicitLeft = 176
+    ExplicitTop = 192
+    ExplicitWidth = 289
+    ExplicitHeight = 193
+  end
+  object GroupBox1: TGroupBox
+    Left = 168
+    Top = 152
+    Width = 281
+    Height = 193
+    Caption = 'Preencha para Somar'
+    TabOrder = 2
+    object lblValor2: TLabel
+      Left = 79
+      Top = 52
+      Width = 19
+      Height = 37
+      Caption = '+'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label1: TLabel
+      Left = 175
+      Top = 52
+      Width = 19
+      Height = 37
+      Caption = '='
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -27
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object edtValor1: TEdit
+      Left = 16
+      Top = 63
+      Width = 57
+      Height = 25
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 0
+      TextHint = 'Valor'
+    end
+    object btnSomar: TButton
+      Left = 97
+      Top = 95
+      Width = 75
+      Height = 25
+      Caption = 'Calcular'
+      TabOrder = 1
+      OnClick = btnSomarClick
+    end
+    object edtValor2: TEdit
+      Left = 103
+      Top = 64
+      Width = 66
+      Height = 25
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ImeName = 'Portuguese (Brazilian ABNT)'
+      ParentFont = False
+      TabOrder = 2
+      TextHint = 'Valor 2'
+    end
+    object edtResultado: TEdit
+      Left = 200
+      Top = 64
+      Width = 65
+      Height = 25
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWindowText
+      Font.Height = -13
+      Font.Name = 'Segoe UI'
+      Font.Style = []
+      ParentFont = False
+      TabOrder = 3
+      TextHint = 'Valor'
+    end
+  end
+end

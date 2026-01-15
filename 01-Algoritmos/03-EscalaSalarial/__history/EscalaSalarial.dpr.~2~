@@ -1,0 +1,46 @@
+program EscalaSalarial;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+const
+SALARIO_MINIMO = 1621.00;
+
+function CalcularQuantosSalarios(salario: Currency) : Currency;
+begin
+  Result := (salario / SALARIO_MINIMO);
+end;
+
+procedure LerDados(salario: Currency);
+begin
+  Writeln('---Descubra quantos salários mínimos você ganha---');
+
+  Writeln('Qual o seu salário?');
+  Readln(salario);
+end;
+
+procedure ExibirResultado(salario: Currency);
+var
+resultado: Currency;
+
+begin
+
+  resultado := CalcularQuantosSalarios(salario);
+  Writeln('Você ganha ', resultado:0:2, ' salários mínimos')
+
+end;
+
+var
+salario: Currency;
+
+begin
+LerDados(salario);
+ExibirResultado(salario);
+
+Readln;
+
+end.

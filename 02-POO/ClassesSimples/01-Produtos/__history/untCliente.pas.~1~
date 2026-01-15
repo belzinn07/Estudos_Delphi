@@ -1,0 +1,13 @@
+unit untCliente;
+
+interface
+
+type
+  TProduto: class;
+    priva
+
+
+
+implementation
+
+end.

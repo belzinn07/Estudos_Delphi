@@ -1,0 +1,40 @@
+program ParOuImpar;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+function EhPar(numero: Integer) : Boolean;
+begin
+  Result := (numero mod 2 = 0);
+end;
+
+procedure LerDados(var numero: Integer);
+begin
+  Writeln('---Par ou Ímpar---');
+
+  Writeln('Digite um número: ');
+  Readln(numero);
+
+end;
+
+procedure VerificarParOuImpar(numero: Integer);
+begin
+  if EhPar(numero) then
+  Writeln(numero, ' é Par')
+  else
+  Writeln(numero, ' é Ímpar');
+end;
+
+var
+numero:Integer;
+
+begin
+  LerDados(numero);
+  VerificarParOuImpar(numero);
+
+  Readln;
+end.

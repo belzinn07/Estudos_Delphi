@@ -1,0 +1,44 @@
+program FizzBuzz;
+
+{$APPTYPE CONSOLE}
+
+{$R *.res}
+
+uses
+  System.SysUtils;
+
+function ExibirFizzBuzz(numero: Integer): string;
+begin
+  if (numero mod 3 = 0) and (numero mod 5 = 0) then
+    Exit('FizzBuzz');
+
+  if numero mod 3 = 0 then
+    Exit('Fizz');
+
+  if numero mod 5 = 0 then
+    Exit('Buzz');
+
+  Result := numero.ToString;
+end;
+
+procedure ExibirResultado;
+var i: Integer;
+begin
+
+  for i := 1 to 100 do
+  begin
+     Writeln(ExibirFizzBuzz(i));
+  end;
+
+end;
+
+var
+numero:Integer;
+begin
+    Writeln('---Jogo do FizzBuzz---');
+
+    ExibirResultado;
+
+    Readln;
+
+end.

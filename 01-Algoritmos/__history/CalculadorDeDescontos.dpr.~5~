@@ -1,0 +1,35 @@
+﻿program CalculadorDeDescontos;
+
+{$APPTYPE CONSOLE}
+
+uses
+  System.SysUtils;
+
+var
+  nomeDoProduto: string;
+  precoOriginal: Currency;
+  valorPercentual: Double;
+  valorDeDesconto: Currency;
+  precoFinal: Currency;
+
+begin
+  Writeln('Digite o nome do produto:');
+  Readln(nomeDoProduto);
+
+  Writeln('Digite o preco:');
+  Readln(precoOriginal);
+
+  Writeln('Digite o percentual de desconto:');
+  Readln(valorPercentual);
+
+  valorDeDesconto := precoOriginal * (valorPercentual / 100);
+  Writeln('O valor de desconto é: R$ ', valorDeDesconto:0:2);
+
+  precoFinal := precoOriginal - valorDeDesconto;
+  Writeln('Preco final é: R$ ', precoFinal:0:2);
+
+  Writeln;
+  Writeln('Pressione ENTER para sair...');
+  Readln;  // 👈 mantém o console aberto
+end.
+
