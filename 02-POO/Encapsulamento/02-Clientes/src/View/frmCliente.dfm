@@ -20,6 +20,7 @@ object Form1: TForm1
     Color = 6888724
     ParentBackground = False
     TabOrder = 0
+    ExplicitWidth = 1105
     object Label1: TLabel
       Left = 72
       Top = 21
@@ -43,7 +44,8 @@ object Form1: TForm1
     Color = clWhite
     ParentBackground = False
     TabOrder = 1
-    ExplicitTop = 89
+    ExplicitWidth = 1105
+    ExplicitHeight = 491
     object Panel3: TPanel
       Left = 304
       Top = 127
@@ -105,7 +107,7 @@ object Form1: TForm1
         Width = 353
         Height = 23
         TabOrder = 1
-        TextHint = 'Digite o nome do cliente...'
+        TextHint = 'Digite o CPF'
       end
       object btnValidar: TButton
         Left = 184

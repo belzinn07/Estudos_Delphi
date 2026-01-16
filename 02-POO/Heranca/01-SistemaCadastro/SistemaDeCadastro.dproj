@@ -107,6 +107,7 @@
         <VerInfo_Locale>1033</VerInfo_Locale>
         <DCC_DcuOutput>.\lib\$(Platform)\$(Config)</DCC_DcuOutput>
         <DCC_ExeOutput>.\bin\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_UnitSearchPath>.\src\Model;.\src\View;$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_1_Win64)'!=''">
         <AppDPIAwarenessMode>PerMonitorV2</AppDPIAwarenessMode>
@@ -127,25 +128,25 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="untPessoa.pas"/>
-        <DCCReference Include="untCliente.pas"/>
-        <DCCReference Include="untEmpresa.pas"/>
-        <DCCReference Include="untBaseCadastro.pas">
+        <DCCReference Include="src\View\untBaseCadastro.pas">
             <Form>frmBaseCadastro</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="untCadastroCliente.pas">
+        <DCCReference Include="src\View\untCadastroCliente.pas">
             <Form>frmCadastroCliente</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="untCadastroEmpresa.pas">
+        <DCCReference Include="src\View\untCadastroEmpresa.pas">
             <Form>frmCadastroEmpresa</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="untPrincipal.pas">
+        <DCCReference Include="src\View\untPrincipal.pas">
             <Form>frmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\Model\untCliente.pas"/>
+        <DCCReference Include="src\Model\untEmpresa.pas"/>
+        <DCCReference Include="src\Model\untPessoa.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

@@ -2,8 +2,8 @@ program ValidadorDePreco;
 
 uses
   Vcl.Forms,
-  frmPrincipal in 'frmPrincipal.pas' {Form1},
-  untProduto in 'untProduto.pas';
+  untProduto in 'src\Model\untProduto.pas',
+  frmPrincipal in 'src\View\frmPrincipal.pas' {Form1};
 
 {$R *.res}
 

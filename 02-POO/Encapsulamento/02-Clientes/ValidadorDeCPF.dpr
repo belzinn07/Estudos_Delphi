@@ -2,8 +2,8 @@ program ValidadorDeCPF;
 
 uses
   Vcl.Forms,
-  frmCliente in 'frmCliente.pas' {Form1},
-  untCliente in 'untCliente.pas';
+  untCliente in 'src\Model\untCliente.pas',
+  frmCliente in 'src\View\frmCliente.pas' {Form1};
 
 {$R *.res}
 
