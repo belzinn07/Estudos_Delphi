@@ -1,4 +1,4 @@
-program CadastroClientes;
+program ValidadorDeCPF;
 
 uses
   Vcl.Forms,
