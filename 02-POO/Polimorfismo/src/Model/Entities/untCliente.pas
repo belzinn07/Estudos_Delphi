@@ -1,4 +1,4 @@
-unit untCliente;
+unit untEmpresa;
 
 interface
 
@@ -6,25 +6,18 @@ uses
   untPessoa, untInterface;
 
 type
-  TCliente =  class(TPessoa, IValidador)
+  TValidadorCPF =  class(TPessoa, IValidador)
 
   public
-      function ValidarDocumento: Boolean;override;
-      function GetTipoEntidade:  string;
+      function Validar: Boolean;
 
   end;
 
 implementation
 
-function TCliente.GetTipoEntidade: string;
-begin
-  Result := 'Pessoa Física';
-end;
-
-function TCliente.ValidarDocumento: Boolean;
+function TValidadorCPF.Validar: Boolean;
 begin
   Result := Length(Documento) = 11;
 end;
-
 
 end.

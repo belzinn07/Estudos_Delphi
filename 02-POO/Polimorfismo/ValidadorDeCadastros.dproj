@@ -129,9 +129,26 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="src\Model\Interfaces\untInterface.pas"/>
-        <DCCReference Include="src\Model\Entities\untCliente.pas"/>
+        <DCCReference Include="src\Model\Validadores\untValidadorCNPJ.pas"/>
         <DCCReference Include="src\Model\Entities\untPessoa.pas"/>
-        <DCCReference Include="src\Model\Entities\untEmpresa.pas"/>
+        <DCCReference Include="src\ViewModel\untCadastroViewModel.pas"/>
+        <DCCReference Include="src\Model\Validadores\untValidadorCPF.pas"/>
+        <DCCReference Include="src\View\untPrincipalView.pas">
+            <Form>frmPrincipal</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\untBaseCadastro.pas">
+            <Form>frmBaseCadastro</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\untCadastroClienteView.pas">
+            <Form>frmCadastroCliente</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\View\untCadastroEmpresaView.pas">
+            <Form>frmCadastroEmpresa</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
