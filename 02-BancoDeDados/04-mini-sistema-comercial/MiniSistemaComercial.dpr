@@ -4,7 +4,9 @@ uses
   Vcl.Forms,
   untDMConexao in 'src\infra\untDMConexao.pas' {DMConexao: TDataModule},
   untCadastroClienteView in 'src\view\untCadastroClienteView.pas' {frmCadastroClientes},
-  untClientesVew in 'src\view\untClientesVew.pas' {frmClientePrincipal};
+  untClientesVew in 'src\view\untClientesVew.pas' {frmClientePrincipal},
+  untCliente in 'src\model\untCliente.pas',
+  untIValidador in 'src\model\contracts\untIValidador.pas';
 
 {$R *.res}
 

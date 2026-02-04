@@ -140,6 +140,8 @@
             <Form>frmClientePrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
+        <DCCReference Include="src\model\untCliente.pas"/>
+        <DCCReference Include="src\model\contracts\untIValidador.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
