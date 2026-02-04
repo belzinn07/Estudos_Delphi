@@ -127,13 +127,17 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="untDMConexao.pas">
+        <DCCReference Include="src\infra\untDMConexao.pas">
             <Form>DMConexao</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="untCadastroClienteView.pas">
+        <DCCReference Include="src\view\untCadastroClienteView.pas">
             <Form>frmCadastroClientes</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
+        <DCCReference Include="src\view\untClientesVew.pas">
+            <Form>frmClientePrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <BuildConfiguration Include="Base">
@@ -162,7 +166,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\MiniSistemaComercial.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="lib\Win32\Debug\MiniSistemaComercial.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>MiniSistemaComercial.exe</RemoteName>
                         <Overwrite>true</Overwrite>

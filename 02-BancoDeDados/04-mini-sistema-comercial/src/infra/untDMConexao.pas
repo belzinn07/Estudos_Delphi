@@ -16,6 +16,7 @@ type
     qryClientes: TFDQuery;
     FDTransaction: TFDTransaction;
     qryCRUD: TFDQuery;
+    dsClientes: TDataSource;
     procedure DataModuleCreate(Sender: TObject);
   private
     { Private declarations }

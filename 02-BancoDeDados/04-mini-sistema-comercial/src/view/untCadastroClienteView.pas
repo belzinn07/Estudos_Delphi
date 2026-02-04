@@ -10,8 +10,14 @@ type
   TfrmCadastroClientes = class(TForm)
     Panel1: TPanel;
     Label1: TLabel;
-    Edit1: TEdit;
-    Edit2: TEdit;
+    edtNome: TEdit;
+    edtCPF: TEdit;
+    lblNome: TLabel;
+    lblCPF: TLabel;
+    Panel2: TPanel;
+    btnSalvar: TButton;
+    btnVoltar: TButton;
+    procedure btnVoltarClick(Sender: TObject);
   private
     { Private declarations }
   public
@@ -24,5 +30,13 @@ var
 implementation
 
 {$R *.dfm}
+
+procedure TfrmCadastroClientes.btnVoltarClick(Sender: TObject);
+begin
+
+edtNome.Clear;
+Close;
+
+end;
 
 end.
