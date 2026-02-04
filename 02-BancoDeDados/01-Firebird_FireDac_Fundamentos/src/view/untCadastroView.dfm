@@ -26,7 +26,7 @@ object frmCadastro: TfrmCadastro
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 624
+    ExplicitWidth = 1056
     object Label4: TLabel
       Left = 1
       Top = 1
@@ -41,8 +41,6 @@ object frmCadastro: TfrmCadastro
       Font.Name = 'Segoe UI'
       Font.Style = [fsBold]
       ParentFont = False
-      ExplicitLeft = 480
-      ExplicitTop = 38
       ExplicitWidth = 305
       ExplicitHeight = 45
     end
@@ -55,23 +53,8 @@ object frmCadastro: TfrmCadastro
     Color = 6888724
     ParentBackground = False
     TabOrder = 1
-    object Label1: TLabel
-      Left = 64
-      Top = 99
-      Width = 18
-      Height = 23
-      Caption = 'ID'
-      Color = clWhite
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -17
-      Font.Name = 'Segoe UI'
-      Font.Style = [fsBold]
-      ParentColor = False
-      ParentFont = False
-    end
     object Label2: TLabel
-      Left = 184
+      Left = 48
       Top = 99
       Width = 30
       Height = 23
@@ -120,9 +103,9 @@ object frmCadastro: TfrmCadastro
       TabOrder = 1
     end
     object edtCPF: TEdit
-      Left = 184
+      Left = 48
       Top = 128
-      Width = 281
+      Width = 417
       Height = 31
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
@@ -131,19 +114,6 @@ object frmCadastro: TfrmCadastro
       Font.Style = []
       ParentFont = False
       TabOrder = 2
-    end
-    object edtID: TEdit
-      Left = 48
-      Top = 128
-      Width = 65
-      Height = 31
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWindowText
-      Font.Height = -17
-      Font.Name = 'Segoe UI'
-      Font.Style = []
-      ParentFont = False
-      TabOrder = 3
     end
   end
 end

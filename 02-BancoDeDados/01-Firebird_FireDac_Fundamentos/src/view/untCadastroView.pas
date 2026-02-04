@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,
 
-  untDMConexao;
+  untDM;
 
 type
   TfrmCadastro = class(TForm)
@@ -15,8 +15,6 @@ type
     Panel2: TPanel;
     edtNome: TEdit;
     edtCPF: TEdit;
-    edtID: TEdit;
-    Label1: TLabel;
     Label2: TLabel;
     Label3: TLabel;
     Label4: TLabel;
@@ -36,24 +34,14 @@ implementation
 
 procedure TfrmCadastro.btnSalvarClick(Sender: TObject);
 
-var
-vID : Integer;
-
 begin
-if not TryStrToInt(edtID.Text, vID) then
-  begin
-    ShowMessage('Por favor, insira um ID numérico válido.');
-    Exit;
-  end;
 
 try
-
-TdmConexao.InserirClientes(
-vID,
+dmConexao.InserirClientes(
 edtNome.Text,
 edtCPF.Text
-
 );
+
 
 ShowMessage('Cliente ' + edtNome.Text + ' inserido com sucesso!');
 

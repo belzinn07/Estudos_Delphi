@@ -2,9 +2,9 @@ program CrudDBGrid;
 
 uses
   Vcl.Forms,
-  untCrudClientes in 'untCrudClientes.pas' {frmPrincipal},
-  untDataModule in 'untDataModule.pas' {DataModule2: TDataModule},
-  untCadastroCliente in 'untCadastroCliente.pas' {Form1};
+  untCrudClientesView in 'src\view\untCrudClientesView.pas' {frmPrincipal},
+  untDataModule in 'src\infra\untDataModule.pas' {DataModule2: TDataModule},
+  untCadastroCliente in 'src\view\untCadastroCliente.pas' {Form1};
 
 {$R *.res}
 

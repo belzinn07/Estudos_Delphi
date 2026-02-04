@@ -127,12 +127,12 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="src\View\untCadastroView.pas">
+        <DCCReference Include="src\view\untCadastroView.pas">
             <Form>frmCadastro</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\Model\untDMConexao.pas">
-            <Form>TdmConexao</Form>
+        <DCCReference Include="src\infra\untDM.pas">
+            <Form>dmConexao</Form>
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>

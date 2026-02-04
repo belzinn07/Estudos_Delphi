@@ -1,4 +1,4 @@
-unit untDMConexao;
+unit untDM;
 
 interface
 
@@ -11,10 +11,10 @@ uses
   FireDAC.Comp.DataSet;
 
 type
-  TTdmConexao = class(TDataModule)
-    FDConnection: TFDConnection;
+  TdmConexao = class(TDataModule)
     qryConexao: TFDQuery;
-    procedure InserirClientes(AID: Integer; ANome, ACPF: String);
+    FDConnection1: TFDConnection;
+    procedure InserirClientes(const ANome, ACPF: String);
   private
     { Private declarations }
   public
@@ -22,7 +22,7 @@ type
   end;
 
 var
-  TdmConexao: TTdmConexao;
+  dmConexao: TdmConexao;
 
 implementation
 
@@ -32,15 +32,14 @@ implementation
 
 { TTdmConexao }
 
-procedure TTdmConexao.InserirClientes(AID: Integer; ANome, ACPF: String);
+procedure TdmConexao.InserirClientes(const ANome, ACPF: String);
 begin
   qryConexao.Close;
   qryConexao.SQL.Clear;
 
-  qryConexao.SQL.Text := 'INSERT INTO CLIENTES (ID, NOME, CPF) ' +
-                         'VALUES (:pID, :pNome, :pCPF)';
+  qryConexao.SQL.Text := 'INSERT INTO CLIENTES (NOME, CPF) ' +
+                         'VALUES (:pNome, :pCPF)';
 
-  qryConexao.ParamByName('pID').AsInteger := AID;
   qryConexao.ParamByName('pNome').AsString := ANome;
   qryConexao.ParamByName('pCPF').AsString  := ACPF;
 
