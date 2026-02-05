@@ -29,71 +29,56 @@ constructor TClienteService.Create(ADM: TDMConexao; ARepository: TClienteReposit
 begin
 
   FDM := ADM;
-  FRepository := ARepository.Create(ADM);
+  FRepository := TClienteRepository.Create(ADM);
 
 end;
 
 procedure TClienteService.AdicionarCliente(ACliente: TCliente);
-var
-  Conn : TFDConnection;
 begin
-  Conn := DMConexao.FDConnection;
-
-  Conn.StartTransaction;
+  FDM.FDConnection.StartTransaction;
 
   try
-
-   FRepository.InserirCliente(ACliente);
-   Conn.Commit;
+    FRepository.InserirCliente(ACliente);
+    FDM.FDConnection.Commit;
 
   except
-   Conn.Rollback;
+    FDM.FDConnection.Rollback;
+    raise;
+
+  end;
+
+end;
+
+
+procedure TClienteService.AtualizarCliente(ACliente: TCliente);
+begin
+  FDM.FDConnection.StartTransaction;
+
+  try
+    FRepository.AtualizarCliente(ACliente);
+    FDM.FDConnection.Commit;
+
+  except
+    FDM.FDConnection.Rollback;
     raise;
 
   end;
 end;
 
-procedure TClienteService.AtualizarCliente(ACliente: TCliente);
-
-var
- Conn: TFDConnection;
-
-begin
-  Conn := DMConexao.FDConnection;
-
-  Conn.StartTransaction;
-
-  try
-
-  FRepository.AtualizarCliente(ACliente);
-  Conn.Commit;
-
-  except
-    Conn.Rollback;
-      raise;
-
-  end;
-end;
-
 procedure TClienteService.ExcluirCliente(ACliente: TCliente);
-var
- Conn: TFDConnection;
-
 begin
-  Conn := DMConexao.FDConnection;
-
-  Conn.StartTransaction;
+  FDM.FDConnection.StartTransaction;
 
   try
-
-  FRepository.ExcluirCliente(ACliente);
-  Conn.Commit;
+    FRepository.ExcluirCliente(ACliente);
+    FDM.FDConnection.Commit;
 
   except
-    Conn.Rollback;
-      raise;
+    FDM.FDConnection.Rollback;
+    raise;
 
   end;
 end;
+
 
 end.
