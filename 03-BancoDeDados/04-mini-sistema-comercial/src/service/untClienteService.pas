@@ -15,7 +15,7 @@ type
       FRepository : TClienteRepository;
 
      public
-      constructor Create(ADM: TDMConexao; ARepository: TClienteRepository);
+      constructor Create(ADM: TDMConexao);
 
       procedure AdicionarCliente(ACliente: TCliente);
       procedure AtualizarCliente(ACliente : TCliente);
@@ -25,7 +25,7 @@ type
 
 implementation
 
-constructor TClienteService.Create(ADM: TDMConexao; ARepository: TClienteRepository);
+constructor TClienteService.Create(ADM: TDMConexao);
 begin
 
   FDM := ADM;
@@ -38,6 +38,7 @@ begin
   FDM.FDConnection.StartTransaction;
 
   try
+    ACliente.Validar;
     FRepository.InserirCliente(ACliente);
     FDM.FDConnection.Commit;
 
@@ -55,6 +56,7 @@ begin
   FDM.FDConnection.StartTransaction;
 
   try
+    ACliente.Validar;
     FRepository.AtualizarCliente(ACliente);
     FDM.FDConnection.Commit;
 
@@ -70,6 +72,8 @@ begin
   FDM.FDConnection.StartTransaction;
 
   try
+
+    ACliente.Validar;
     FRepository.ExcluirCliente(ACliente);
     FDM.FDConnection.Commit;
 

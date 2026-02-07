@@ -1,4 +1,4 @@
-object frmCadastroClientes: TfrmCadastroClientes
+object FormularioClientes: TFormularioClientes
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
@@ -12,6 +12,8 @@ object frmCadastroClientes: TfrmCadastroClientes
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poMainFormCenter
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   TextHeight = 15
   object Panel1: TPanel
     Left = 0
@@ -108,6 +110,7 @@ object frmCadastroClientes: TfrmCadastroClientes
       Height = 25
       Caption = 'Salvar'
       TabOrder = 2
+      OnClick = btnSalvarClick
     end
     object btnVoltar: TButton
       Left = 72

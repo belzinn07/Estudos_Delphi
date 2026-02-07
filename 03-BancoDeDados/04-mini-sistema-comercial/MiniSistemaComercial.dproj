@@ -132,8 +132,8 @@
             <FormType>dfm</FormType>
             <DesignClass>TDataModule</DesignClass>
         </DCCReference>
-        <DCCReference Include="src\view\untCadastroClienteView.pas">
-            <Form>frmCadastroClientes</Form>
+        <DCCReference Include="src\view\untFormularioClienteView.pas">
+            <Form>FormularioClientes</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\view\untClientesVew.pas">
@@ -142,6 +142,8 @@
         </DCCReference>
         <DCCReference Include="src\model\untCliente.pas"/>
         <DCCReference Include="src\model\contracts\untIValidador.pas"/>
+        <DCCReference Include="src\repository\untClienteRepository.pas"/>
+        <DCCReference Include="src\service\untClienteService.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>

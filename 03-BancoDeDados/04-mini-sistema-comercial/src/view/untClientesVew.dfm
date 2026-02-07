@@ -66,6 +66,7 @@ object frmClientePrincipal: TfrmClientePrincipal
     Height = 41
     Caption = 'Editar'
     TabOrder = 3
+    OnClick = btnEditarClick
   end
   object btnExcluir: TButton
     Left = 287

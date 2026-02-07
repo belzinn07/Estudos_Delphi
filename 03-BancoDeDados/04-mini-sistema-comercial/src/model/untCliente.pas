@@ -18,7 +18,7 @@ type
      constructor Create( ANome: string; ACPF: string);
      procedure Validar;
 
-     property Id: Integer read FId;
+     property Id: Integer read FId write FId;
      property Nome: string read FNome write FNome;
      property CPF : string read FCPF write FCPF;
 
