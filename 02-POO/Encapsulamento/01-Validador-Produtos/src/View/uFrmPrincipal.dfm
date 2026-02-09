@@ -1,0 +1,126 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 707
+  ClientWidth = 1092
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -12
+  Font.Name = 'Segoe UI'
+  Font.Style = []
+  TextHeight = 15
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 1092
+    Height = 105
+    Align = alTop
+    Color = clSkyBlue
+    ParentBackground = False
+    TabOrder = 0
+    ExplicitWidth = 1090
+    object Label1: TLabel
+      Left = 72
+      Top = 21
+      Width = 355
+      Height = 54
+      Caption = 'Validador de Pre'#231'o'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = 6888724
+      Font.Height = -40
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold, fsUnderline]
+      ParentFont = False
+    end
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 105
+    Width = 1092
+    Height = 602
+    Align = alClient
+    TabOrder = 1
+    ExplicitWidth = 1090
+    ExplicitHeight = 594
+    object GroupBox1: TGroupBox
+      Left = 304
+      Top = 96
+      Width = 465
+      Height = 273
+      Caption = 'Formul'#225'rio'
+      Color = clSkyBlue
+      ParentBackground = False
+      ParentColor = False
+      TabOrder = 0
+      object Label2: TLabel
+        Left = 90
+        Top = 64
+        Width = 115
+        Height = 17
+        Caption = 'Nome do Produto:'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 6888724
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object Label3: TLabel
+        Left = 90
+        Top = 118
+        Width = 34
+        Height = 17
+        Caption = 'Pre'#231'o'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 6888724
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object edtNome: TEdit
+        Left = 90
+        Top = 87
+        Width = 289
+        Height = 25
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 0
+      end
+      object edtPreco: TEdit
+        Left = 90
+        Top = 141
+        Width = 289
+        Height = 25
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = clWindowText
+        Font.Height = -13
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 1
+      end
+      object btnValidar: TButton
+        Left = 192
+        Top = 184
+        Width = 75
+        Height = 25
+        Caption = 'Validar'
+        Font.Charset = DEFAULT_CHARSET
+        Font.Color = 6888724
+        Font.Height = -12
+        Font.Name = 'Segoe UI'
+        Font.Style = []
+        ParentFont = False
+        TabOrder = 2
+        OnClick = btnValidarClick
+      end
+    end
+  end
+end
