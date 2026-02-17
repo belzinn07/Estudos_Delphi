@@ -26,7 +26,7 @@ object frmPrincipal: TfrmPrincipal
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitWidth = 1065
+    ExplicitWidth = 1096
     object Label1: TLabel
       Left = 1
       Top = 1
@@ -53,6 +53,8 @@ object frmPrincipal: TfrmPrincipal
     Align = alClient
     BorderStyle = bsSingle
     TabOrder = 1
+    ExplicitWidth = 1096
+    ExplicitHeight = 413
     object Panel3: TPanel
       Left = 192
       Top = 144

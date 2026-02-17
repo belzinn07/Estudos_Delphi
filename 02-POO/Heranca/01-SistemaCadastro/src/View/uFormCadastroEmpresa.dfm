@@ -1,15 +1,13 @@
 inherited frmCadastroEmpresa: TfrmCadastroEmpresa
   Caption = 'frmCadastroEmpresa'
   StyleElements = [seFont, seClient, seBorder]
-  ExplicitWidth = 1083
-  ExplicitHeight = 565
   TextHeight = 15
   inherited Panel1: TPanel
     StyleElements = [seFont, seClient, seBorder]
-    ExplicitLeft = 0
-    ExplicitWidth = 1065
     inherited Label1: TLabel
+      Width = 304
       StyleElements = [seFont, seClient, seBorder]
+      ExplicitTop = 51
     end
   end
   inherited Panel2: TPanel

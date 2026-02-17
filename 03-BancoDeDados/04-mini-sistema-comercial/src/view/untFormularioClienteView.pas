@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
 
-  untClienteService, untCliente, untDMConexao;
+  untClienteService, untCliente, untDMConexao, untClientesView;
 
 type
   TFormularioClientes = class(TForm)
@@ -19,10 +19,10 @@ type
     Panel2: TPanel;
     btnSalvar: TButton;
     btnVoltar: TButton;
-    procedure btnVoltarClick(Sender: TObject);
     procedure btnSalvarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
+    procedure btnVoltarClick(Sender: TObject);
   private
     FDM: TDMConexao;
     FService: TClienteService;
@@ -62,6 +62,7 @@ begin
     begin
       FService.AdicionarCliente(Cliente);
       ShowMessage('Cliente adicionado com sucesso');
+      Close;
     end;
 
   finally
@@ -69,6 +70,13 @@ begin
   end;
 end;
 
+
+procedure TFormularioClientes.btnVoltarClick(Sender: TObject);
+begin
+
+frmClientePrincipal.
+
+end;
 
 procedure TFormularioClientes.FormCreate(Sender: TObject);
 begin

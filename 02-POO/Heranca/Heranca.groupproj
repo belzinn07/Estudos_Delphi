@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{EBCA736A-F6C1-4441-88D4-029DD7A81D14}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="02-ContaBancaria\SistemaBancario.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="01-SistemaCadastro\SistemaDeCadastro.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="SistemaBancario">
+        <MSBuild Projects="02-ContaBancaria\SistemaBancario.dproj"/>
+    </Target>
+    <Target Name="SistemaBancario:Clean">
+        <MSBuild Projects="02-ContaBancaria\SistemaBancario.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SistemaBancario:Make">
+        <MSBuild Projects="02-ContaBancaria\SistemaBancario.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SistemaDeCadastro">
+        <MSBuild Projects="01-SistemaCadastro\SistemaDeCadastro.dproj"/>
+    </Target>
+    <Target Name="SistemaDeCadastro:Clean">
+        <MSBuild Projects="01-SistemaCadastro\SistemaDeCadastro.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SistemaDeCadastro:Make">
+        <MSBuild Projects="01-SistemaCadastro\SistemaDeCadastro.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="SistemaBancario;SistemaDeCadastro"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="SistemaBancario:Clean;SistemaDeCadastro:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="SistemaBancario:Make;SistemaDeCadastro:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

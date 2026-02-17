@@ -128,25 +128,31 @@
         <DelphiCompile Include="$(MainSource)">
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
-        <DCCReference Include="src\View\untBaseCadastro.pas">
+        <DCCReference Include="src\View\uFormBaseCadastro.pas">
             <Form>frmBaseCadastro</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\untCadastroCliente.pas">
+        <DCCReference Include="src\View\uFormCadastroCliente.pas">
             <Form>frmCadastroCliente</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\untCadastroEmpresa.pas">
+        <DCCReference Include="src\View\uFormCadastroEmpresa.pas">
             <Form>frmCadastroEmpresa</Form>
             <FormType>dfm</FormType>
         </DCCReference>
-        <DCCReference Include="src\View\untPrincipal.pas">
+        <DCCReference Include="src\View\uFormPrincipal.pas">
             <Form>frmPrincipal</Form>
             <FormType>dfm</FormType>
         </DCCReference>
         <DCCReference Include="src\Model\untCliente.pas"/>
         <DCCReference Include="src\Model\untEmpresa.pas"/>
         <DCCReference Include="src\Model\untPessoa.pas"/>
+        <DCCReference Include="..\02-ContaBancaria\src\Model\uContaBancaria.pas"/>
+        <DCCReference Include="..\02-ContaBancaria\src\Model\uContaCorrente.pas"/>
+        <DCCReference Include="..\02-ContaBancaria\src\View\uFormBase.pas">
+            <Form>Form2</Form>
+            <FormType>dfm</FormType>
+        </DCCReference>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -173,7 +179,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\SistemaDeCadastro.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="bin\Win32\Debug\SistemaDeCadastro.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>SistemaDeCadastro.exe</RemoteName>
                         <Overwrite>true</Overwrite>

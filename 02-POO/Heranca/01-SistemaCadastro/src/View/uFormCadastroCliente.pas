@@ -1,4 +1,4 @@
-unit untCadastroCliente;
+unit uFormCadastroCliente;
 
 interface
 
@@ -8,7 +8,7 @@ uses
   Vcl.Graphics, Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.ExtCtrls,
 
 
-  untBaseCadastro,
+  uFormBaseCadastro,
   untPessoa,
   untCliente;
 

@@ -1,4 +1,4 @@
-unit untClientesVew;
+unit untClientesView;
 
 interface
 
@@ -31,8 +31,6 @@ var
 implementation
 
 {$R *.dfm}
-
-uses untCadastroClienteView;
 
 procedure TfrmClientePrincipal.btnEditarClick(Sender: TObject);
 var

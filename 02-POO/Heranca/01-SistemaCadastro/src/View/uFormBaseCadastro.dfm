@@ -26,11 +26,11 @@ object frmBaseCadastro: TfrmBaseCadastro
     ParentBackground = False
     ParentFont = False
     TabOrder = 0
-    ExplicitLeft = 8
+    ExplicitWidth = 1065
     object Label1: TLabel
       Left = 1
-      Top = 1
-      Width = 304
+      Top = 51
+      Width = 1065
       Height = 45
       Align = alBottom
       Alignment = taCenter
@@ -41,6 +41,8 @@ object frmBaseCadastro: TfrmBaseCadastro
       Font.Name = 'Segoe UI'
       Font.Style = [fsBold]
       ParentFont = False
+      ExplicitTop = 1
+      ExplicitWidth = 304
     end
   end
   object Panel2: TPanel

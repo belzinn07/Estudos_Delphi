@@ -1,20 +1,14 @@
 inherited frmCadastroCliente: TfrmCadastroCliente
   Caption = 'frmCadastroCliente'
   StyleElements = [seFont, seClient, seBorder]
-  ExplicitLeft = 3
-  ExplicitTop = 3
-  ExplicitWidth = 1083
-  ExplicitHeight = 565
   TextHeight = 15
   inherited Panel1: TPanel
     StyleElements = [seFont, seClient, seBorder]
-    ExplicitLeft = 0
-    ExplicitWidth = 1065
     inherited Label1: TLabel
-      Width = 1065
-      Height = 95
+      Width = 304
       Align = alClient
       StyleElements = [seFont, seClient, seBorder]
+      ExplicitTop = 51
     end
   end
   inherited Panel2: TPanel
@@ -48,8 +42,8 @@ inherited frmCadastroCliente: TfrmCadastroCliente
     object Label4: TLabel [2]
       Left = 1
       Top = 1
-      Width = 399
-      Height = 247
+      Width = 221
+      Height = 37
       Align = alClient
       Alignment = taCenter
       Caption = 'Cadastrar Cliente'
@@ -59,10 +53,6 @@ inherited frmCadastroCliente: TfrmCadastroCliente
       Font.Name = 'Segoe UI'
       Font.Style = [fsBold]
       ParentFont = False
-      ExplicitLeft = 88
-      ExplicitTop = 8
-      ExplicitWidth = 221
-      ExplicitHeight = 37
     end
     inherited edtNome: TEdit
       Alignment = taCenter

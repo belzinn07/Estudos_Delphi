@@ -1,4 +1,4 @@
-unit untBaseCadastro;
+unit uFormBaseCadastro;
 
 interface
 
@@ -41,10 +41,11 @@ begin
     pessoa.Documento := edtDocumento.Text;
 
     if pessoa.ValidarDocumento then
-      ShowMessage('Sucesso ao validar')
+      ShowMessage('Sucesso ao validar. Cadastro Realizado com Sucesso')
     else
       ShowMessage('Documento inválido');
 
+    Close;
 
   finally
       pessoa.Free;
