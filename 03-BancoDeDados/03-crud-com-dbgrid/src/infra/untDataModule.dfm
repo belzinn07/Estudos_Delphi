@@ -6,14 +6,15 @@ object DMConexao: TDMConexao
   object FDConnection: TFDConnection
     Params.Strings = (
       
-        'Database=C:\DEV\Delphi\Estudos_Delphi\03-BancoDeDados\01-Firebir' +
-        'd_FireDac_Fundamentos\BANCO.FDB'
+        'Database=C:\DEV\Delphi\Estudos_Delphi\03-BancoDeDados\00-databas' +
+        'e\BANCO.FDB'
       'User_Name=SYSDBA'
       'Password=masterkey'
       'Server=localhost'
       'Port=3050'
       'CharacterSet=UTF8'
       'DriverID=FB')
+    Connected = True
     Left = 400
     Top = 288
   end

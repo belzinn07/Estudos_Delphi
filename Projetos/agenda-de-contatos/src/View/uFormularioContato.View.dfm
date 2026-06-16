@@ -1,10 +1,11 @@
-object FormularioClientes: TFormularioClientes
+object FormContato: TFormContato
   Left = 0
   Top = 0
   BorderIcons = [biSystemMenu, biMinimize]
-  Caption = 'Cadastro de Clientes'
-  ClientHeight = 578
-  ClientWidth = 942
+  BorderStyle = bsDialog
+  Caption = 'FormContato'
+  ClientHeight = 441
+  ClientWidth = 624
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
@@ -14,110 +15,103 @@ object FormularioClientes: TFormularioClientes
   Position = poMainFormCenter
   OnCreate = FormCreate
   OnDestroy = FormDestroy
+  OnShow = FormShow
   TextHeight = 15
-  object Panel1: TPanel
+  object pnlGeral: TPanel
     Left = 0
     Top = 0
-    Width = 942
-    Height = 81
-    Align = alTop
+    Width = 624
+    Height = 441
+    Align = alClient
     Color = 6888724
     ParentBackground = False
     TabOrder = 0
-    ExplicitWidth = 940
+    ExplicitWidth = 622
+    ExplicitHeight = 433
     object Label1: TLabel
-      Left = 1
-      Top = 1
-      Width = 305
-      Height = 45
-      Align = alClient
-      Alignment = taCenter
-      Caption = 'Cadastro de Clientes'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -32
-      Font.Name = 'Segoe UI'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-  end
-  object Panel2: TPanel
-    Left = 280
-    Top = 225
-    Width = 385
-    Height = 224
-    Color = 6888724
-    ParentBackground = False
-    TabOrder = 1
-    object lblCPF: TLabel
-      Left = 40
-      Top = 101
-      Width = 23
-      Height = 17
-      Caption = 'CPF'
-      Font.Charset = DEFAULT_CHARSET
-      Font.Color = clWhite
-      Font.Height = -13
-      Font.Name = 'Segoe UI'
-      Font.Style = [fsBold]
-      ParentFont = False
-    end
-    object lblNome: TLabel
-      Left = 40
-      Top = 32
-      Width = 37
-      Height = 17
+      Left = 120
+      Top = 105
+      Width = 47
+      Height = 21
       Caption = 'Nome'
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWhite
-      Font.Height = -13
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = [fsBold]
       ParentFont = False
     end
-    object edtCPF: TEdit
-      Left = 40
-      Top = 124
-      Width = 297
-      Height = 25
+    object Label3: TLabel
+      Left = 120
+      Top = 186
+      Width = 66
+      Height = 21
+      Caption = 'Telefone'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 264
+      Top = 33
+      Width = 79
+      Height = 30
+      Caption = 'Contato'
+      Font.Charset = DEFAULT_CHARSET
+      Font.Color = clWhite
+      Font.Height = -21
+      Font.Name = 'Segoe UI'
+      Font.Style = [fsBold]
+      ParentFont = False
+    end
+    object edtNome: TEdit
+      Left = 120
+      Top = 136
+      Width = 377
+      Height = 29
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -13
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
       TabOrder = 0
     end
-    object edtNome: TEdit
-      Left = 40
-      Top = 63
-      Width = 297
-      Height = 25
+    object edtTelefone: TEdit
+      Left = 120
+      Top = 213
+      Width = 377
+      Height = 29
       Font.Charset = DEFAULT_CHARSET
       Font.Color = clWindowText
-      Font.Height = -13
+      Font.Height = -16
       Font.Name = 'Segoe UI'
       Font.Style = []
       ParentFont = False
       TabOrder = 1
     end
-    object btnSalvar: TButton
-      Left = 232
-      Top = 176
-      Width = 75
-      Height = 25
+    object btnSalvar: TBitBtn
+      Left = 349
+      Top = 288
+      Width = 108
+      Height = 41
       Caption = 'Salvar'
+      NumGlyphs = 2
       TabOrder = 2
       OnClick = btnSalvarClick
     end
-    object btnVoltar: TButton
-      Left = 72
-      Top = 176
-      Width = 75
-      Height = 25
-      Caption = 'Voltar'
+    object btnCancelar: TBitBtn
+      Left = 168
+      Top = 288
+      Width = 105
+      Height = 41
+      Caption = 'Cancelar'
+      Kind = bkCancel
+      NumGlyphs = 2
       TabOrder = 3
-      OnClick = btnVoltarClick
     end
   end
 end

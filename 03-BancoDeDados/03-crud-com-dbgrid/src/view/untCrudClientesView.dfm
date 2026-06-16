@@ -86,6 +86,7 @@ object frmPrincipal: TfrmPrincipal
     OnClick = btnEditarClick
   end
   object dsClientes: TDataSource
+    DataSet = DMConexao.qryClientes
     Left = 224
     Top = 120
   end

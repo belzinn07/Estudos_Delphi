@@ -74,7 +74,7 @@ end;
 procedure TFormularioClientes.btnVoltarClick(Sender: TObject);
 begin
 
-frmClientePrincipal.
+frmClientePrincipal.ShowModal;
 
 end;
 

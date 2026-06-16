@@ -7,7 +7,7 @@ uses
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Data.DB, Vcl.Grids, Vcl.DBGrids,
   Vcl.StdCtrls, Vcl.ExtCtrls,
 
-  untClienteService, untFormularioClienteView;
+  untClienteService;
 
 type
   TfrmClientePrincipal = class(TForm)
@@ -30,6 +30,9 @@ var
 
 implementation
 
+uses
+  untFormularioClienteView;
+
 {$R *.dfm}
 
 procedure TfrmClientePrincipal.btnEditarClick(Sender: TObject);
@@ -37,7 +40,8 @@ var
  Service: TClienteService;
 
 begin
-
+FormularioClientes.ModoEdicao := True;
+FormularioClientes.ShowModal;
 
 
 end;
