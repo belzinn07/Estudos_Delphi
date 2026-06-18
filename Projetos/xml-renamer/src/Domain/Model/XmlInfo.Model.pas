@@ -14,7 +14,7 @@ type
    property ArquivoOriginal : string read FArquivoOriginal write FArquivoOriginal;
    property ChaveDeAcesso: string read FChaveDeAcesso write FChaveDeAcesso;
    property NovoNome: string read FNovoNome write FNovoNome;
-   property Valido: string read FValido write FValido;
+   property Valido: Boolean read FValido write FValido;
 
  end;
 

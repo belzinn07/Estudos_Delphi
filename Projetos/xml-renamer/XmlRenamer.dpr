@@ -3,7 +3,8 @@ program XmlRenamer;
 uses
   Vcl.Forms,
   FormPrincipal.View in 'src\view\FormPrincipal.View.pas' {Form1},
-  XmlInfo.Model in 'src\Domain\Model\XmlInfo.Model.pas';
+  XmlInfo.Model in 'src\Domain\Model\XmlInfo.Model.pas',
+  XmlScanner.Service in 'src\Service\XmlScanner.Service.pas';
 
 {$R *.res}
 

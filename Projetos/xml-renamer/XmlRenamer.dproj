@@ -131,6 +131,7 @@
             <Form>Form1</Form>
         </DCCReference>
         <DCCReference Include="src\Domain\Model\XmlInfo.Model.pas"/>
+        <DCCReference Include="src\Service\XmlScanner.Service.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -157,7 +158,7 @@
                 </Excluded_Packages>
             </Delphi.Personality>
             <Deployment Version="4">
-                <DeployFile LocalName="Win32\Debug\XmlRenamer.exe" Configuration="Debug" Class="ProjectOutput">
+                <DeployFile LocalName="bin\Win32\Debug\XmlRenamer.exe" Configuration="Debug" Class="ProjectOutput">
                     <Platform Name="Win32">
                         <RemoteName>XmlRenamer.exe</RemoteName>
                         <Overwrite>true</Overwrite>
