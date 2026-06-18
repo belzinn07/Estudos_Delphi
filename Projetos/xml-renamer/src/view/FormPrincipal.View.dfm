@@ -1,4 +1,4 @@
-object Form1: TForm1
+object frmPrincipal: TfrmPrincipal
   Left = 0
   Top = 0
   Caption = 'XmlRename'
@@ -11,6 +11,8 @@ object Form1: TForm1
   Font.Name = 'Segoe UI'
   Font.Style = []
   Position = poDesigned
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
   TextHeight = 15
   object pnlContainer: TPanel
     Left = 0
@@ -19,7 +21,8 @@ object Form1: TForm1
     Height = 494
     Align = alClient
     TabOrder = 0
-    ExplicitHeight = 505
+    ExplicitWidth = 1101
+    ExplicitHeight = 486
     object Label1: TLabel
       Left = 112
       Top = 117
@@ -61,6 +64,7 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 1
+      OnClick = btnProcurarPastaClick
     end
     object mmLog: TMemo
       Left = 112
@@ -82,6 +86,7 @@ object Form1: TForm1
       Font.Style = []
       ParentFont = False
       TabOrder = 3
+      OnClick = btnAnalisarClick
     end
     object btnRenomear: TButton
       Left = 888

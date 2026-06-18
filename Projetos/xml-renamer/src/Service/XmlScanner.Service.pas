@@ -49,6 +49,14 @@ begin
     XmlInfo := TXmlInfo.Create;
     XmlInfo.ArquivoOriginal := Arquivo;
 
+      XmlInfo.ChaveDeAcesso := ExtrairChave(Arquivo);
+
+  XmlInfo.NovoNome :=
+    XmlInfo.ChaveDeAcesso + '-nfe.xml';
+
+  XmlInfo.Valido :=
+    XmlInfo.ChaveDeAcesso <> '';
+
     Result.Add(XmlInfo);
   end;
 end;

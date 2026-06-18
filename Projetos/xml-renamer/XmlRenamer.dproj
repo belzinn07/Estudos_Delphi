@@ -128,10 +128,11 @@
             <MainSource>MainSource</MainSource>
         </DelphiCompile>
         <DCCReference Include="src\view\FormPrincipal.View.pas">
-            <Form>Form1</Form>
+            <Form>frmPrincipal</Form>
         </DCCReference>
         <DCCReference Include="src\Domain\Model\XmlInfo.Model.pas"/>
         <DCCReference Include="src\Service\XmlScanner.Service.pas"/>
+        <DCCReference Include="src\Service\XmlRename.Service.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
