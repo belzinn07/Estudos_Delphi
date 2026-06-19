@@ -6,7 +6,7 @@ uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.ExtCtrls, Vcl.StdCtrls,   Vcl.FileCtrl,
   XmlScanner.Service, System.Generics.Collections, XmlInfo.Model,
-  XmlRename.Service, System.ImageList, Vcl.ImgList;
+  XmlRename.Service, System.ImageList, Vcl.ImgList, Vcl.Buttons;
 
 type
   TfrmPrincipal = class(TForm)
@@ -14,16 +14,17 @@ type
     edtPasta: TEdit;
     btnProcurarPasta: TButton;
     mmLog: TMemo;
-    btnAnalisar: TButton;
-    btnRenomear: TButton;
     Label1: TLabel;
     ImageList1: TImageList;
+    btnAnalisar: TSpeedButton;
+    btnRenomearr: TSpeedButton;
     procedure btnProcurarPastaClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure btnAnalisarClick(Sender: TObject);
     procedure Log(const AMensagem: string);
-    procedure btnRenomearClick(Sender: TObject);
+    procedure btnRenomearrClick(Sender: TObject);
+
   private
     FScannerService : TXmlScannerService;
     FRenameService : TXmlRenameService;
@@ -62,6 +63,43 @@ begin
     ' - ' +
     AMensagem
   );
+
+end;
+
+procedure TfrmPrincipal.btnAnalisarClick(Sender: TObject);
+
+var
+ Xml: TXmlInfo;
+
+begin
+  if edtPasta.Text = '' then
+  begin
+    ShowMessage('Selecione uma pasta.');
+    Exit;
+  end;
+
+  mmLog.Clear;
+  Log('Iniciando análise...');
+  Sleep(500);
+
+  FreeAndNil(FListaXmls);
+
+  FListaXmls := FScannerService.LerPasta(edtPasta.Text);
+
+  Log(Format('%d arquivo(s) encontrado(s)', [FListaXmls.Count]));
+  Sleep(500);
+
+  mmLog.Lines.Add('');
+  for Xml in FListaXmls do
+  begin
+   Log('Xml encontrado: ' + ExtractFileName(Xml.ArquivoOriginal));
+   Log('Chave encontrada: ' + Xml.ChaveDeAcesso);
+   Log('Novo nome: ' + Xml.NovoNome);
+
+    mmLog.Lines.Add('');
+  end;
+
+
 end;
 
 procedure TfrmPrincipal.btnProcurarPastaClick(Sender: TObject);
@@ -76,41 +114,7 @@ begin
 
 end;
 
-procedure TfrmPrincipal.btnAnalisarClick(Sender: TObject);
-var
- Xml: TXmlInfo;
-
-begin
-  if edtPasta.Text = '' then
-  begin
-    ShowMessage('Selecione uma pasta.');
-    Exit;
-  end;
-
-  mmLog.Clear;
-  Log('Iniciando análise...');
-
-  FreeAndNil(FListaXmls);
-
-  FListaXmls := FScannerService.LerPasta(edtPasta.Text);
-
-   mmLog.Lines.Add(
-    Format('%d arquivo(s) encontrado(s).',
-      [FListaXmls.Count])
-  );
-
-  mmLog.Lines.Add('');
-  for Xml in FListaXmls do
-  begin
-   Log('Xml encontrado: ' + ExtractFileName(Xml.ArquivoOriginal));
-   Log('Chave encontrada: ' + Xml.ChaveDeAcesso);
-   Log('Novo nome: ' + Xml.NovoNome);
-    mmLog.Lines.Add('');
-  end;
-
-end;
-
-procedure TfrmPrincipal.btnRenomearClick(Sender: TObject);
+procedure TfrmPrincipal.btnRenomearrClick(Sender: TObject);
 var
  Xml : TXmlInfo;
 
